@@ -1,6 +1,11 @@
 <script setup lang="ts">
+import { supabase } from '@/lib/supbaseClient'
+
+console.log(supabase)
 </script>
 
 <template>
-  <h1>Welcome to Pulse!</h1>
+  <main>
+    <router-view></router-view>
+  </main>
 </template>
